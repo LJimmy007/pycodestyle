@@ -1,6 +1,12 @@
 Changelog
 =========
 
+Unreleased
+----------
+
+* Match the directory name when applying exclude patterns to ``.``.
+  Issue #1217.
+
 2.15.0 (2026-09-22)
 -------------------
 

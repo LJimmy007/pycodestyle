@@ -2416,7 +2416,7 @@ class StyleGuide:
     def input_dir(self, dirname):
         """Check all files in this directory and all subdirectories."""
         dirname = dirname.rstrip('/')
-        if self.excluded(dirname):
+        if self.excluded(os.path.abspath(dirname)):
             return 0
         counters = self.options.report.counters
         verbose = self.options.verbose
